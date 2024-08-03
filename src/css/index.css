@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer{
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+    outline: none;
+    }
+}
+.open{
+    transform: translate(0, -100%);
+    display: absolute;
+}
+.close{
+    transform: translate(0, 100%);
+}
+.active{
+    @apply bg-teal-500 font-bold py-2 px-4 rounded
+}
